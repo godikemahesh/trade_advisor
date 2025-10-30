@@ -1,7 +1,7 @@
 groq
 joblib
 scikit-learn
-serpapi
+google-search-results
 textblob
 requests
 yfinance
@@ -9,4 +9,5 @@ streamlit
 datetime
 pandas
 numpy
+
 
