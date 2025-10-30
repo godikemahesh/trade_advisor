@@ -8,7 +8,7 @@ from groq import Groq
 from serpapi.google_search import GoogleSearch
 from sklearn.pipeline import Pipeline
 import joblib
-class_model = joblib.load("trade_text_classifier.pkl")
+class_model = joblib.load("trade_advisor/trade_text_classifier.pkl")
 
 # ----------------------------- API KEYS -----------------------------
 TWELVE_DATA_API_KEY = st.secrets(["apis"]["data_api"])
@@ -250,3 +250,4 @@ elif page == "💬 Chat with LLM":
 
 st.markdown("---")
 st.caption("Powered by Valkon AI 🚀")
+
