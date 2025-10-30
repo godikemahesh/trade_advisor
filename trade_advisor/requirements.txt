@@ -1,0 +1,11 @@
+groq
+joblib
+sklearn
+serpapi
+textblob
+requests
+yfinance
+streamlit
+datetime
+pandas
+numpy
