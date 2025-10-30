@@ -11,11 +11,11 @@ import joblib
 class_model = joblib.load("trade_advisor/trade_text_classifier.pkl")
 
 # ----------------------------- API KEYS -----------------------------
-TWELVE_DATA_API_KEY = st.secrets(["apis"]["data"])
-FINNHUB_API_KEY = st.secrets(["apis"]["finhub"])  
-SERPAPI_KEY = st.secrets(["apis"]["serp_api"])         
+TWELVE_DATA_API_KEY = st.secrets["apis"]["data"]
+FINNHUB_API_KEY = st.secrets["apis"]["finhub"]
+SERPAPI_KEY = st.secrets["apis"]["serp_api"]
 # ----------------------------- Groq Client -----------------------------
-client = Groq(api_key=st.secrets(["apis"]["groq"]))
+client = Groq(api_key=st.secrets["apis"]["groq"])
 
 chat_history = [
     {"role": "system", "content": "You are Valkon AI a financial stock Advisor."}
@@ -250,5 +250,6 @@ elif page == "💬 Chat with LLM":
 
 st.markdown("---")
 st.caption("Powered by Valkon AI 🚀")
+
 
 
