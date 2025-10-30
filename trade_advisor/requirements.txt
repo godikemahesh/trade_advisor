@@ -1,6 +1,6 @@
 groq
 joblib
-sklearn
+scikit-learn
 serpapi
 textblob
 requests
@@ -9,3 +9,4 @@ streamlit
 datetime
 pandas
 numpy
+
