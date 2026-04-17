@@ -161,14 +161,14 @@ def chat_with_llm(user_question):
         return f"⚠️ Chat Error: {e}"
 
 # ----------------------------- Streamlit UI -----------------------------
-st.set_page_config(page_title="Valkon AI - Trade Advisor", page_icon="📈", layout="wide")
-st.title("Valkontek Embedded & IOT services PVT.LTD")
+st.set_page_config(page_title="Privexa AI - Trade Advisor", page_icon="📈", layout="wide")
+st.title("PRIVEXA AI")
 st.sidebar.title("🧭 Navigation")
 page = st.sidebar.radio("Choose a section:", ["📊 Stock Advisor", "💬 Chat with LLM"])
 
 # ----------------------------- PAGE 1: Stock Advisor -----------------------------
 if page == "📊 Stock Advisor":
-    st.title("Valkon AI — Stock Advisor")
+    st.title("PRIVEXA — Stock Advisor")
     st.write("Your personal AI-powered assistant for live stock insights and smart trading decisions.")
 
     symbol = st.text_input("Enter Stock Symbol (e.g. INFY.NS, TCS.NS, RELIANCE.NS):", "RELIANCE.NS")
@@ -249,7 +249,7 @@ elif page == "💬 Chat with LLM":
             st.markdown(f"🤖 **Valkon AI:** {msg}")
 
 st.markdown("---")
-st.caption("Powered by Valkon AI 🚀")
+st.caption("Powered by Privexa AI 🚀")
 
 
 
